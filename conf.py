@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # -- PROJECT Variables ----------------------------------------------------
-settings_project_name = "Catalogo Nazionale Dati per l'Interoperabilità Semantica"
+settings_project_name = "PDND - Guida Nomenclatura eservice"
 settings_copyright_copyleft = "Dipartimento per la Trasformazione Digitale"
 settings_editor_name = "Dipartimento per la Trasformazione Digitale"
 settings_doc_version = "Bozza"
 settings_doc_release = "Bozza"
-settings_basename = "dati-semantic-guida-sviluppo"
-settings_file_name = "dati-semantic-guida-sviluppo"
+settings_basename = "pdnd-guida-nomenclatura-eservice"
+settings_file_name = "pdnd-guida-nomenclatura-eservice"
 settings_discourse_url = "https://forum.italia.it/"
 
 # -- No need to change below here

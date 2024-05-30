@@ -1,10 +1,9 @@
 document:
-  name: Catalogo Nazionale Dati per l'Interoperabilità Semantica
+  name: PDND - Guida Nomenclatura eservice
 
   description: |-
-      Catalogo Nazionale Dati per l'Interoperabilità Semantica
+      PDND - Guida Nomenclatura eservice
   tags:
     - interoperabilità
     - API
-    - semantica
     - dati
