@@ -4,7 +4,7 @@ Il [catalogo degli e-service di PDND](https://www.interop.pagopa.it/catalogo) è
 
 
 Il repository è strutturato per essere compatibile con la piattaforma [Docs
-Italia](https://italia.github.io/pdnd-guida-nomenclatura-eservice/docs/buone-pratiche-per-il-nome.html). 
+Italia](https://italia.github.io/pdnd-guida-nomenclatura-eservice/).
 
 
 # Come contribuire
