@@ -1,12 +1,10 @@
 Guida alla nomenclatura degli e-service PDND
 +++++++++++++++++++++++++++
-Documento di guida
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Buone pratiche per la nomenclatura e la descrizione degli e-service in Piattaforma Digitale Nazionale Dati (PDND)
+Buone pratiche per la nomenclatura e la descrizione degli e-service in Piattaforma Digitale Nazionale Dati (PDND)
 =================================================================================================================
 
-Il `catalogo degli e-service <https://www.interop.pagopa.it/catalogo>`__
+Il `catalogo degli e-service <https://www.interop.pagopa.it/catalogo>`
 di PDND è in costante crescita. Una nomenclatura accurata è fondamentale
 per agevolare la ricerca e la comprensione degli e-service.
 
@@ -15,7 +13,7 @@ descrizione degli e-service, definite a partire dall’analisi del
 catalogo esistente.
 
 Puoi contribuire all’evoluzione di queste buone pratiche aprendo issue
-su github.
+su `GitHub <https://github.com/italia/pdnd-guida-nomenclatura-eservice>`.
 
 
 .. toctree::
