@@ -17,8 +17,7 @@ comprensione.**
 
 #. **AZIONE/I** che l’e-service abilita al fruitore: descrive cosa fa, a cosa serve l’e-service. 
    
-   Es. ricerca, verifica. ➔Vedi
-   glossario delle azioni
+   Es. ricerca, verifica. ➔Vedi `Glossario delle azioni consigliate per la nomenclatura degli e-service`_
 
 #. **OGGETTO**, ossia il dato in oggetto
 
