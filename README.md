@@ -1,4 +1,4 @@
-# Buone pratiche per la nomenclatura e della descrizione degli e-service di PDND
+# Buone pratiche per la nomenclatura e la descrizione degli e-service di PDND
 
 Il [catalogo degli e-service di PDND] (https://www.interop.pagopa.it/catalogo) è in costante crescita. Una nomenclatura accurata è fondamentale per agevolare la ricerca e la comprensione degli e-service. Questo repository raccoglie le buone pratiche per una corretta nomenclatura e descrizione degli e-service, definite a partire dall’analisi del catalogo esistente.
 
