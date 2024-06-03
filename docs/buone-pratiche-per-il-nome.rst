@@ -28,8 +28,8 @@ comprensione.**
 
    Es. ANPR oppure WaaS
 
-#.  **CODICE** identificativo, inserito come ultimo elemento, tra parentesi. 
-
+#. **CODICE** identificativo, inserito come ultimo elemento, tra parentesi. 
+   
    Es. (C001)
 
 *E-service completi, che compiono numerose azioni, possono essere nominati con il semplice oggetto.*
