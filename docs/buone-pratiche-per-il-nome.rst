@@ -49,6 +49,8 @@ Altre buone pratiche: cosa fare e cosa non fare
 
 -  utilizzare le **maiuscole** solo dove necessario
 
+.. image:: /media/Fig_04_esempio_nome.png
+
 -  quando non strettamente necessari **evitare** **abbreviazioni,
    acronimi, inglesismi** e **termini tecnici** o utilizzati dall’ente
    erogatore ma difficilmente comprensibili in generale: gli e-service
