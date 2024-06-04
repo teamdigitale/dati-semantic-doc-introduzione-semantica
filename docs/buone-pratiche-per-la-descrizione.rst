@@ -16,17 +16,17 @@ Numero limite di caratteri consentiti per la descrizione: **250**
 -  quando è presente un **codice identificativo**, è buona pratica
    mettere a disposizione dei fruitori la norma o documentazione di
    riferimento;
-.. image:: /media/Fig_07_esempio_descrizione.png
+.. image:: /media/Fig_07_esempio_descrizione.webp
 
 -  utilizzare le **maiuscole** solo dove necessario
 
-.. image:: /media/Fig_09_esempio_descrizione.png
+.. image:: /media/Fig_09_esempio_descrizione.webp
 
 -  **non** è necessario inserire **informazioni tecniche già presenti
    nella scheda dell’e-service** (es. tecnologia rest/soap, versione,
    attributi necessari)
-.. image:: /media/Fig_08_esempio_descrizione.png
+.. image:: /media/Fig_08_esempio_descrizione.webp
 
 -  **non** inserire contatti o informazioni sensibili: la descrizione
    sarà visibile pubblicamente.
-.. image:: /media/Fig_10_esempio_descrizione.png
+.. image:: /media/Fig_10_esempio_descrizione.webp

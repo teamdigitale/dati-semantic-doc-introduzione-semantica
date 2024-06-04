@@ -39,7 +39,7 @@ Suggeriamo di inserire codici solo quando significativi e riconoscibili
 per i fruitori, evitandoli ove non strettamente necessari. Il codice
 deve far riferimento a una norma o documentazione consultabile.
 
-.. image:: /media/Fig_01_struttura_nome.png
+.. image:: /media/Fig_01_struttura_nome.webp
 
 Altre buone pratiche: cosa fare e cosa non fare
 -----------------------------------------------
@@ -49,20 +49,20 @@ Altre buone pratiche: cosa fare e cosa non fare
 
 -  utilizzare le **maiuscole** solo dove necessario
 
-.. image:: /media/Fig_04_esempio_nome.png
+.. image:: /media/Fig_04_esempio_nome.webp
 
 -  quando non strettamente necessari **evitare** **abbreviazioni,
    acronimi, inglesismi** e **termini tecnici** o utilizzati dall’ente
    erogatore ma difficilmente comprensibili in generale: gli e-service
    dovrebbero essere di facile lettura
 
-.. image:: /media/Fig_05_esempio_nome.png
+.. image:: /media/Fig_05_esempio_nome.webp
 
 -  **non** inserire termini quali “**API**”, “**servizio**”,
    “**e-service**”, “**interoperabilità**”: risultano ridondanti e
    sottraggono spazio al contenuto
 
-.. image:: /media/Fig_02_esempio_nome.png
+.. image:: /media/Fig_02_esempio_nome.webp
 
 -  **non** riportare il **nome del fornitore o dell’ente erogatore**, o
    codici identificativi dell’ente. Il nome dell’erogatore è già
@@ -72,13 +72,13 @@ Altre buone pratiche: cosa fare e cosa non fare
    alla fruizione: le informazioni sono contenute nella scheda
    dell’e-service e potrebbero essere
 
-.. image:: /media/Fig_03_esempio_nome.png
+.. image:: /media/Fig_03_esempio_nome.webp
 
 -  **non** utilizzare termini quali “**new**”, “**nuovo**”, “**clone**”
    o riferimenti alla versione: le informazioni sulla versione sono già
    contenute all’interno della scheda e-service
 
-.. image:: /media/Fig_06_esempio_nome.png
+.. image:: /media/Fig_06_esempio_nome.webp
 
 -  **non** devono essere presenti termini quali “**SOAP**”, “**REST**” in quanto 
    l’architettura con cui è costruita l’API si trova già nella scheda di dettaglio dell'e-service
