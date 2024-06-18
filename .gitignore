@@ -1,13 +1,2 @@
-# python test files
-.tox
-*.py[co]
-
-# ide
-.idea
-
-# sphinx builds
-_*
-error.log
-
-#visual studio
-.vscode
+__pycache__
+_build

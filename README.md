@@ -1,10 +1,21 @@
-# Buone pratiche per la nomenclatura e la descrizione degli e-service di PDND
+# Introduzione alla semantica dei dati
 
-Il [catalogo degli e-service di PDND](https://www.interop.pagopa.it/catalogo) è in costante crescita. Una nomenclatura accurata è fondamentale per agevolare la ricerca e la comprensione degli e-service. Questo repository raccoglie le buone pratiche per una corretta nomenclatura e descrizione degli e-service, definite a partire dall’analisi del catalogo esistente.
+Questo repository contiene un'introduzione alla semantica dei dati
+in formato sorgente.
 
 
 Il repository è strutturato per essere compatibile con la piattaforma [Docs
 Italia](https://italia.github.io/pdnd-guida-nomenclatura-eservice/).
+
+# Preview
+
+Per lavorare utilizzando una preview del documento è sufficiente lanciare Docker
+
+```
+docker-compose up
+```
+
+la preview sarà visibile all'indirizzo [http://localhost:8000/](http://localhost:8000/)
 
 
 # Come contribuire

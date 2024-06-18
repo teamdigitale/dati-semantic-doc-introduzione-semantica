@@ -1,9 +1,9 @@
 document:
-  name: PDND - Guida Nomenclatura eservice
+  name: Introduzione alla semantica dei dati
 
   description: |-
-      PDND - Guida Nomenclatura eservice
+      Introduzione alla semantica dei dati
   tags:
     - interoperabilità
-    - API
+    - semantica
     - dati

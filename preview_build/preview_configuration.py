@@ -11,7 +11,15 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+# -- PROJECT Variables ----------------------------------------------------
+
+#import docs_italia_theme
+
+import sys
+sys.path.append('../')
 import docs_italia_theme
+
+#########
 
 extensions = [
     "sphinx.ext.autodoc",
@@ -31,3 +39,5 @@ html_theme = "docs_italia_theme"
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [docs_italia_theme.get_html_theme_path()]
+
+numfig = True
