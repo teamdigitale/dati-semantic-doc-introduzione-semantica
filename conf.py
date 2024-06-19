@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # -- PROJECT Variables ----------------------------------------------------
-settings_project_name = "PDND - Guida Nomenclatura eservice"
+settings_project_name = "Introduzione alla semantica dei dati"
 settings_copyright_copyleft = "Dipartimento per la Trasformazione Digitale"
 settings_editor_name = "Dipartimento per la Trasformazione Digitale"
-settings_doc_version = "Bozza"
-settings_doc_release = "Bozza"
-settings_basename = "pdnd-guida-nomenclatura-eservice"
-settings_file_name = "pdnd-guida-nomenclatura-eservice"
+settings_doc_version = ""
+settings_doc_release = ""
+settings_basename = "dati-semantic-doc-introduzione-semantica"
+settings_file_name = "dati-semantic-doc-introduzione-semantica"
 settings_discourse_url = "https://forum.italia.it/"
 
 # -- No need to change below here
@@ -16,8 +16,9 @@ settings_discourse_url = "https://forum.italia.it/"
 import os
 import sys
 
-docs_italia_theme = __import__("docs-italia-theme")
-
+#docs_italia_theme = __import__("docs-italia-theme")
+sys.path.append('./')
+import docs_italia_theme
 
 # -- RTD configuration ------------------------------------------------
 
@@ -50,7 +51,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx.ext.coverage",
     "sphinx.ext.ifconfig",
-    "docs-italia-theme",
+    "docs_italia_theme",
     "sphinx.ext.autosectionlabel",
     "sphinxcontrib.discourse",
     "sphinxcontrib.httpspec",
@@ -132,7 +133,7 @@ def setup(app):
 
 
 # -- Options for HTML output ----------------------------------------------
-html_theme = "docs-italia-theme"
+html_theme = "docs_italia_theme"
 
 html_theme_path = [docs_italia_theme.get_html_theme_path()]
 
@@ -149,14 +150,20 @@ html_theme_options = {
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 
-html_theme = "docs_italia_theme"
-# html_theme_path = ["themes", ]
+if not on_rtd:  # only import and set the theme if we're building docs locally
+    html_theme = "docs_italia_theme"
+    # html_theme_path = ["themes", ]
 
-# local builds with singlehtml don't need sidebar
-# nor docs_italia_theme
-if "singlehtml" in sys.argv:
-    html_theme = "basic"
-    html_theme_options.update({"no_sidebar": True})
+    # local builds with singlehtml don't need sidebar
+    # nor docs_italia_theme
+    if "singlehtml" in sys.argv:
+        html_theme = "basic"
+        html_theme_options.update({"no_sidebar": True})
+else:
+    # Override default css to get a larger width for ReadTheDoc build
+    html_context = {
+        "css_files": ["_static/css/theme.css", "_static/css/badge_only.css"]
+    }
 
 
 # The name for this set of Sphinx documents.  If None, it defaults to

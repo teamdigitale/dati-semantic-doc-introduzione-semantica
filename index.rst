@@ -1,25 +1,60 @@
-Guida alla nomenclatura degli e-service PDND
-++++++++++++++++++++++++++++++++++++++++++++
+Introduzione alla semantica dei dati e del Web Semantico
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Buone pratiche per la nomenclatura e la descrizione degli e-service in Piattaforma Digitale Nazionale Dati (PDND)
-=================================================================================================================
+Nell’ambito di un linguaggio, sia esso naturale che informatico, si
+individuano due elementi essenziali: la sintassi e la semantica. Mentre
+la sintassi si occupa dell’insieme di regole necessarie per costruire le
+frasi del linguaggio, la semantica si focalizza sull’attribuire un
+significato a ciascuna frase andando oltre l'interpretazione letterale
+di singole parole.
 
-Il `catalogo degli e-service <https://www.interop.pagopa.it/catalogo>`_
-di PDND è in costante crescita. Una nomenclatura accurata è fondamentale
-per agevolare la ricerca e la comprensione degli e-service.
+Nell’ambito informatico, una grossa spinta al concetto di semantica e di
+semantica dei dati è stata data dall’ampia ricerca sul cosiddetto Web
+Semantico o Web dei Dati. Il Web Semantico è un’evoluzione del
+tradizionale Web, quest’ultimo costituito da una rete di documenti (o
+pagine web), destinati prevalentemente alla consultazione da parte di
+persone, tra loro collegati senza specificare alcun significato nel
+collegamento.
 
-Di seguito presentiamo buone pratiche per una corretta nomenclatura e
-descrizione degli e-service, definite a partire dall’analisi del
-catalogo esistente.
+Nel Web Semantico si pone l’accento sui dati più che su pagine o
+documenti e, attraverso l’uso degli standard aperti e consolidati del
+Web, si consente un collegamento nativo tra i dati attraverso la
+definizione di un loro significato esplicito, condiviso e formale. In
+questo caso, il significato non è solo consultabile da persone ma anche
+elaborabile da software per realizzare applicazioni innovative, anche
+capaci di scoprire nuova conoscenza grazie alla navigazione dei
+collegamenti e al ragionamento sul significato attribuito ai dati.
 
-Puoi contribuire all’evoluzione di queste buone pratiche aprendo issue
-su `GitHub <https://github.com/italia/pdnd-guida-nomenclatura-eservice>`_.
+Questa guida presenta la semantica dei dati nel Web come intesa dal Web
+Semantico, già individuata nel 2012 `dalle linee guida dell’Agenzia per
+l’Italia
+Digitale <https://www.agid.gov.it/sites/default/files/repository_files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf>`__
+come lo strumento per “\ *abilitare lo sviluppo di una concreta
+interoperabilità semantica tra Pubbliche Amministrazioni a livello
+nazionale e transfrontaliero*\ ”.
 
+Per realizzare quanto sopra, ci sono quattro regole di base da seguire:
+
+-  Dare un identificativo univoco a tutte le cose del mondo (ai dati);
+
+-  L’identificativo univoco deve essere nel Web così che le persone e i
+   software possano ricercare le cose attraverso i tradizionali
+   protocolli del Web;
+
+-  Quando si ricerca una cosa attraverso l’identificativo univoco è
+   necessario fornire informazioni attraverso standard specifici quali
+   ``RDF`` e ``SPARQL`` (si veda sotto);
+
+-  È necessario includere collegamenti ad altri dati esistenti nel Web
+   dei dati per creare valore dall’integrazione dei dati.
+
+L'Introduzione alla semantica dei dati e del Web Semantico è stata redatta grazie alla collaborazione
+tra il **Dipartimento di trasformazione digitale** e la **Prof.ssa Giorgia Lodi del ISTC-CNR**.
+
+**Indice dei contenuti:**
 
 .. toctree::
   :maxdepth: 3
   :numbered:
 
-  docs/buone-pratiche-per-il-nome.rst
-  docs/buone-pratiche-per-la-descrizione.rst
-  
+  docs/introduzione-alla-semantica-dei-dati.rst
