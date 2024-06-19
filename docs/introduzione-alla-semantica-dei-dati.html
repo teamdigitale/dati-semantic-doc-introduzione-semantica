@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduzione alla semantica dei dati e del Web Semantico</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+
+  <!-- Relations -->
+  <link rel="index" title="Indice" href="../index.html">
+  <link rel="top" title="Introduzione alla semantica dei dati e del Web Semantico" href="../index.html">
+  <link rel="prev" title="Introduzione alla semantica dei dati e del Web Semantico" href="../index.html">
+
+  
+  
+  <!-- No Index - keep if out of docs.italia.it -->
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+</head>
+
+<body class="docs-italia">
+  <script>
+	if (document.location.href.indexOf('?payload=') >= 0)
+		document.body.className += ' loading';
+</script>
+  <header class="container-fluid container-fluid--desktop px-0 header">
+  <nav class="navbar navbar-expand-lg primary-bg-a7 navbar-dark slim-header justify-content-start p-0 pl-lg-4 pr-lg-5">
+    <span class="navbar-brand ml-4"><a class="text-white" href="https://innovazione.gov.it/dipartimento/"><u>Dipartimento per la trasformazione digitale</u></a></span>
+    <button class="navbar-toggler collapsed text-white px-2 py-0 mr-3"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar__icon it-expand my-auto ml-1"></span></button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-lg-2 pl-3">
+          <a class="nav-link" href="http://pianotriennale-ict.italia.it">Piano Triennale</a>
+        </li>
+        <li role="separator" class="nav-item divider ml-lg-0 ml-3"></li>
+        <li class="nav-item nav-text px-lg-2 pl-3 d-lg-none ">
+          <span class="nav-text text-uppercase text-white">Le community</span>
+        </li>
+        <li class="nav-item px-lg-2 pl-3">
+          <a class="nav-link" href="https://developers.italia.it">Developers</a>
+        </li>
+        <li class="nav-item px-lg-2 pl-3">
+          <a class="nav-link" href="https://designers.italia.it">Designers</a>
+        </li>
+        <li role="separator" class="nav-item divider ml-lg-0 ml-3"></li>
+        <li class="nav-item nav-text px-lg-2 pl-3 d-lg-none ">
+          <span class="nav-text text-uppercase text-white">Gli strumenti</span>
+        </li>
+        <li class="nav-item px-lg-2 pl-3">
+          <a class="nav-link" href="https://forum.italia.it">Forum</a>
+        </li>
+        <li class="nav-item px-lg-2 pl-3 active">
+          <a class="nav-link" href="https://docs.italia.it">Docs</a>
+        </li>
+        <li class="nav-item px-lg-2 pl-3">
+          <a class="nav-link" href="https://github.com/italia">GitHub</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="ml-auto">
+      
+    </div>
+  </nav>
+
+  <div class="row p-4 px-lg-5 m-0 bg-primary--dark align-items-center">
+    <div class="row w-100">
+      <div class="logo--header">
+        <a href="/" tabindex="-1" aria-hidden="true" class="d-block">
+          <svg class="svg--header align-bottom" xmlns="http://www.w3.org/2000/svg" height="78.187" width="97.387" viewBox="0 0 91.300002 73.300002"><g fill="#fff"><path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"/></g></svg>
+        </a>
+      </div>
+      <div class="col pl-3 pl-sm-4">
+        <h1 class="h1--header mb-1">
+          <a href="https://docs.italia.it/" class="site-title text-white">
+            Docs Italia
+            
+              <span class="badge badge-pill bg-primary--mid-dark align-middle">beta</span>
+            
+          </a>
+        </h1>
+        <h2 class="text-white mb-0 h2--header">Documenti pubblici, digitali.</h2>
+      </div>
+    </div>
+    <div class="row mt-4 w-100 docs__document-info">
+      <div class="col-md-6">
+        <i class="docs-icon-document docs__document-info__icon"></i>
+        <a href="../index.html" class="text-white font-weight-normal">
+          Introduzione alla semantica dei dati e del Web Semantico
+        </a>
+      </div>
+      <div class="docs__document-info__ownership col-md-5 offset-md-1 mt-3 mt-md-0">
+        
+        <div class="w-100">
+          <i class="docs-icon-project docs__document-info__icon"></i>
+          <span class="docs__document-info__label ml-1">Progetto:</span>
+          <a href="https://schema.gov.it" class="text-white font-weight-normal">
+            <u>schema.gov.it</u>
+          </a>
+        </div>
+        
+        
+        <div class="w-100 mt-1">
+          <i class="docs-icon-publisher docs__document-info__icon"></i>
+          <span class="docs__document-info__label ml-1">Amministrazione:</span>
+          <a href="https://innovazione.gov.it/" class="text-white font-weight-normal">
+            <u>Dipartimento per la trasformazione digitale</u>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</header>
+<!--<div class="doc-header container-fluid container-fluid--desktop bg-white">
+  <div class="row py-3 px-4 px-lg-5 align-items-center flex-nowrap justify-content-between">
+    <div class="col-auto d-md-none d-flex align-items-center order-1">
+      <a href="#" class="btn p-2" role="button" id="searchbox-toggle" data-toggle="collapse" data-target="#searchbox" aria-controls="searchbox" aria-expanded="false" aria-label="Toggle searchbox">
+        <span class="docs-icon-search d-inline-block">
+          <span class="sr-only">Cerca nel documento</span>
+        </span>
+      </a>
+    </div>
+    <div class="col-3 d-none d-md-flex pl-0">
+      
+  <div class="w-100" role="search">
+    <form class="mr-md-3" id="rtd-search-form" action="../search.html" method="get">
+      <div class="input-group" role="search">
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+        <input type="text" class="p-2 text-grey form-control" style="" required="" id="cerca" name="q" placeholder="Cerca nel documento...">
+				<span class="input-group-append">
+					<button type="submit" class="btn btn-default text-primary px-3 py-2" role="search">
+            <span class="docs-icon-search d-block my-auto">
+							<span class="sr-only">Cerca nel documento</span>
+						</span>
+					</button>
+				</span>
+			</div>
+    </form>
+  </div>
+    </div>
+    <div class="col-auto d-flex align-items-center justify-content-center flex-md-grow-1 order-0 order-md-1 pl-0">
+      
+    </div>
+    <div class="col-4 col-sm-auto d-flex flex-md-grow-1 align-items-center justify-content-center order-1">
+      <div id="rst-menu" class="px-2">
+        <div class="dropdown" id="version-list">
+            <button class="btn btn-primary dropdown-toggle badge badge-pill bg-primary text-nowrap px-3 py-2" type="button" id="dropdownVersionButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="current-version">stabile</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownVersionButton">
+              <div class="version-list-wrapper"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto d-none d-md-flex flex-grow-1 align-items-center order-1">
+      <div class="document-actions d-flex flex-column flex-md-row justify-content-around w-100 p-2 p-md-0 text-blue">
+  <div class="dropdown p-3 px-md-2 py-md-0 d-flex flex-wrap">
+    <a class="btn dropdown-toggle p-2 flex-grow-1 text-left" href="#" id="downloads-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="docs-icon-download align-middle"></span>
+      <span class="align-middle">Scarica</span>
+    </a>
+    <div class="dropdown-menu w-100 disabled" aria-labelledby="downloads-dropdown" aria-disabled="true">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="p-3 px-md-2 py-md-0">
+    <a href="#" role="button" class="btn p-2 disabled" aria-disabled="true">
+        <span class="docs-icon-github"></span>
+        <span class="align-middle">Sorgente</span>
+    </a>
+  </div>
+</div>
+    </div>
+    
+    <div class="col-auto pr-0 d-md-none d-flex align-items-center justify-content-end order-1">
+      <a href="#" role="button" class="btn py-2 px-0" data-toggle="modal" data-target="#document-actions">
+        <span class="docs-icon-more"></span>
+        <span class="sr-only">Azioni</span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="progress-container">
+      <div class="progress-bar" id="scrollprogressBar"></div>
+    </div>
+  </div>
+</div>-->
+
+	<!--
+  Forum Italia comments templates
+-->
+
+<script id="forum-italia-comments" type="text/template">
+  <div class="block-comments" id="accordion-comments-{{ topicId }}" data-topic="{{ topicId }}">
+    <!-- Top header -->
+    <div class="block-comments__header d-flex border-top border-bottom border-width-2 pt-3 pb-3 align-items-center justify-content-between">
+      <h6 class="col-auto text-uppercase mb-0">{{ commentsCount }} Commenti</h6>
+      <button class="col-auto block-comments__toggle-btn rounded-circle border border-medium-blue border-width-2 collapsed" data-toggle="collapse" data-target="#comments-{{ topicId }}" aria-expanded="false">
+        <span class="docs-icon-plus"></span>
+        <span class="docs-icon-minus"></span>
+      </button>
+    </div>
+  </div>
+  <div class="block-comments__body collapse" data-parent="#accordion-comments-{{ topicId }}" id="comments-{{ topicId }}">
+    <!-- Input row -->
+    <div class="d-flex align-items-center mb-4 block-comments__input">
+      <div class="box-comment {{ canPost }}" data-topic="{{ topicId }}"></div>
+    </div>
+    <div class="row">
+      <div class="block-comments__container col">
+        <div class="row mt-4">
+          <ul class="block-comments__list col items mb-0" id="accordion-comment-item" data-topic="{{ topicId }}"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="block-comments__header d-flex border-bottom border-width-2 pt-3 pb-3 mb-4 align-items-center justify-content-end">
+      <button class="col-auto block-comments__toggle-btn rounded-circle border border-medium-blue border-width-2 collapsed" data-toggle="collapse" data-target="#comments-{{ topicId }}" aria-expanded="false">
+        <span class="docs-icon-plus"></span>
+        <span class="docs-icon-minus"></span>
+      </button>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__comment" type="text/template">
+  <li id="comment-{{ post.id }}" class="row mb-4 block-comments__item {{ hidden }} {{ isNew }}"
+      data-topic="{{ post.topic_id }}" data-comment="{{ post.id }}">
+    <div id="reply-to-{{ post.id }}" class="block-comments__reply-anchor"></div>
+    <figure class="col-auto mb-0">
+      <img class="block-comments__img rounded-circle" src="{{ avatarUrl }}">
+    </figure>
+    <div class="col block-comments__content">
+      <div class="row align-items-center justify-content-between" id="comment-heading-1">
+        <div class="col-auto">
+          <span class="block-comments__name text-capitalize mb-0">{{ displayName }}</span>
+        </div>
+        <div class="col-auto">
+          <p class="d-inline-block mr-2 block-comments__date mb-0">{{ date }}</p>
+          <button class="block-comments__item-btn" data-toggle="collapse"
+                  data-target="#collapse-{{ post.id }}">
+            <i class="it-collapse"></i>
+            <i class="it-expand"></i>
+          </button>
+        </div>
+      </div>
+      <p class="text-uppercase block-comments__role">{{ publicUserField }}</p>
+      <div class="my-3">{{ replyLink }}</div>
+      <div id="collapse-{{ post.id }}" class="block-comments__paragraph pl-3 border-left collapse show"
+           aria-labelledby="comment-heading-1">
+        {{ post.cooked }}
+      </div>
+      <div class="block-comments__actions mb-2 mt-3">
+        {{ postActions }}
+      </div>
+    </div>
+  </li>
+</script>
+
+<script id="forum-italia__like-button" type="text/template">
+  <small>
+      <button id="{{ buttonAction }}-like-{{ post.id }}" type="button" class="btn btn-primary btn-sm mr-2 px-2 py-1">
+        {{ likeCount }}
+        <i class="it-favorite ml-1 mr-0"></i>
+      </button>
+      {{ likeDone }}
+    </small>
+</script>
+
+<script id="forum-italia__like-info" type="text/template">
+  <small>
+      <span id="like-{{ post.id }}" class="border rounded btn-sm mr-2 px-2 py-1">
+        {{ likeCount }}
+        <i class="it-favorite ml-1 mr-0"></i>
+      </span>
+      {{ likeDone }}
+    </small>
+</script>
+
+<script id="forum-italia__reply-link" type="text/template">
+  <div>
+    <small>In risposta al 
+      <a class="reply-to-post" href="#reply-to-{{ replyDest.id }}">
+        commento di {{ replyDest.name }}
+      </a>
+    </small>
+  </div>
+</script>
+
+<script id="forum__login" type="text/template">
+  <div class="box-comment__user-image box-comment__user-image--anon">
+    <i class="docs-icon-user"></i>
+  </div>
+  <div class="box-comment__login">
+    <div><button class="login-button btn-link p-0 border-0 align-baseline">Accedi al Forum</button> per commentare</div>
+  </div>
+</script>
+
+<script id="forum__comment" type="text/template">
+  <div class="form group">
+    <div class="box-comment__errors-box"></div>
+    <!-- Write -->
+    <div class="d-flex align-items-center mt-4 mb-4 block-comments__input box-comment__write">
+      <figure class="col-auto mb-0">
+        <img class="block-comments__img box-comment__figure rounded-circle" src="">
+          <figcaption>
+            <a href="#logout" class="block-comments__logout-link block-comments__logout-link--visible" data-toggle="modal" data-target="#logout-modal" title="Logout" alt="Logout">Logout</a>
+          </figcaption>
+      </figure>
+      <textarea class="form-control box-comment__body col ml-2 p-2" id="comments-input" placeholder="Scrivi qui un commento. Per formattare il testo puoi usare Markdown. Clicca sul bottone 'suggerimenti' per vedere alcuni esempi." rows="4"></textarea>
+    </div>
+    <!-- Buttons -->
+    <div class="box-comment__buttons">
+      <button type="button" class="btn btn-primary btn-sm box-comment__submit mr-2" disabled="true"><div>invia</div></button>
+      <button type="button" class="btn btn-sm btn-secondary new-comment__suggestions" data-container="body" data-toggle="popover" data-content="html">suggerimenti</button><span class="loading no-bg">&nbsp;</span>
+    </div>
+    <div class="box-comment__required">
+      <span>Scrivi almeno altri <span class="required-chars">20</span> caratteri</span>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__missing_permission" type="text/template">
+	<div class="pl-2 block-comments__input missing_permission error error--{{ errorCode }} row">
+		<figure class="col-auto mb-0 mr-2">
+			<img class="block-comments__img new-comment__figure rounded-circle" src="">
+			<figcaption>
+				<a href="#logout" class="block-comments__logout-link block-comments__logout-link--visible" data-toggle="modal" data-target="#logout-modal" title="Logout" alt="Logout">Logout</a>
+			</figcaption>
+		</figure>
+
+		<div class="missing_permission__text col pt-2">{{ errorText }}</div>
+	</div>
+</script>
+
+<script id="forum__logout--modal" type="text/template">
+  <div class="modal logout-modal" id="logout-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Logout</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Dopo il logout non sarà possibile scrivere nuovi commenti. Sicuro di voler procedere?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="logout-modal__submit">Conferma</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="logout-modal__cancel">Annulla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__markup__tooltip" type="text/template">
+  <div class="tooltip tooltip--active doc-tooltip box-comment__suggestions__tooltip" role="tooltip">
+    <div class="tooltip__wrap">
+      Markdown per la formattazione del testo:
+      <ul class="tooltip__content">
+        <li><b>Grassetto:</b> __testo__ (o **testo**)</li>
+        <li><i>Corsivo</i>: _testo_</li>
+        <li>Link: [Testo](http://example.com)</li>
+        <li>Citazione: &gt; Testo citazione</li>
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__silenced" type="text/template">
+  <div class="error error__silenced">
+    Il tuo account è stato temporaneamente sospeso, scopri di più leggendo
+    <a href="{{ notificationsUrl }}" target="_blank">le tue notifiche</a> su Forum Italia.
+    <br>
+  </div>
+</script>
+
+<script id="forum-italia__closedTopic" type="text/template">
+  <div class="error error__closed">
+    Questa discussione è in sola lettura.
+    <br>
+  </div>
+</script>
+
+<script id="section_navigation__comments" type="text/template">
+  <li class="chapter-nav__item">
+      <span class="it-comment mr-2 align-middle"></span>
+      <a href="#forum-italia-comments-{{ topicId }}" class="chapter-link chapter-link--expand">
+          {{ postsCount }} commenti
+      </a>
+  </li>
+</script>
+
+
+<!--
+  markup_modifier templates
+-->
+
+<script id="markup_modifier__chapter-header" type="text/template"> <div class="chapter-header clearfix"><div class="title-wrap"> </script>
+
+<script id="markup_modifier__icon" type="text/template">
+	<span class="docs-icon-{{ i }}"></span>
+</script>
+
+<script id="markup_modifier__note-action" type="text/template">
+	<div class='note-action'>
+		<button type='button' class='note-close-btn'>×</button>
+		<button type='button' class='note-back-btn'><i class='it-arrow-up'></i> {{ text }} </button>
+	</div>
+</script>
+
+<script id="markup_modifier__admonition" type="text/template">
+	<div class='admonition__toggle-wrap'>
+		<button type='button' class='admonition__toggle-btn'>
+			<span class='admonition__toggle-show-more'>
+				{{ more }} <span class='docs-icon-plus'></span>
+			</span>
+			<span class='admonition__toggle-show-less'>
+				{{ less }} <span class='docs-icon-minus'></span>
+			</span>
+		</button>
+	</div>
+</script>
+
+
+<!--
+  glossary_page templates
+-->
+
+<script id="glossary__btn" type="text/template">
+	<button class='glossary-page__btn collapsed border-top border-grey-light border-width-2 pt-3 pb-3' data-toggle='collapse' data-target='#glossary-{{ id }}' aria-expanded='true' aria-controls='glossary-{{ id }}'>
+		<span class='docs-icon-plus mr-3'> </span>
+		<span class='docs-icon-minus mr-3'> </span>
+		{{ text }}
+	</button>
+</script>
+
+<script id="glossary__copy-link" type="text/template">
+	<div class='glossary-page__copy-link-wrap mt-3'>
+		<i class='it-link mr-2 align-middle'></i>
+		<button type='button' class='glossary-page__copy-link'> {{ copyLink }} </button>
+	</div>
+</script>
+
+
+<!--
+  searchbox_collapse templates
+-->
+
+<script id="searchbox-collapse" type="text/template">
+	<div class="row p-2"><div class="col"></div></div>
+</script>
+
+
+<!--
+  section_navigation templates
+-->
+
+<script id="section_navigation__nav" type="text/template">
+    <div class="chapter-nav">
+        <div class="chapter-nav__wrap">
+            <ul class="chapter-nav__list chapter-nav__list--visible">
+                <li class="chapter-nav__item">
+                    <span class="it-more-items mr-2 align-middle"></span>
+                    <button type="button" data-toggle="modal"
+                        class="chapter-link chapter-link--expand">{{ seeActions }}</button>
+                </li>
+            </ul>
+            <div class="{{ modalClass }} chapter-nav__list--hidden" tabindex="-1" role="dialog"
+                     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="{{ modalContainerClass }}">
+                    <div class="{{ modalContentClass }} chapter-nav__list-wrap">
+                        <div class="chapter-nav__title"> {{ title }} </div>
+                        <ul class="chapter-nav__list">
+                            <li class="chapter-nav__item">
+                                <i class="it-link mr-2 align-middle"></i>
+                                <button type="button" class="chapter-link">{{ copyLink }}</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<!--
+  tooltip templates
+-->
+
+<script id="tooltip__main" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'>{{ item.body }}</p>
+		</div>
+	</div>
+</script>
+
+<script id="tooltip__glossary" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'>{{ trimmedSummary }}</p> {{ btnToGlossary }}
+		</div>
+	</div>
+</script>
+
+<script id="tooltip__note" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip doc-tooltip--note' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'> {{ item.body }}</p>
+		</div>
+	</div>
+</script>
+
+
+  <div id="main" role="document">
+    <div class="container-fluid container-fluid--desktop main-container">
+      <div class="row">
+        <nav class="col--nav">
+          <section class="docs-menu">
+  <div id="desktop-menu" class="sidebar-nav">
+    <a class=""
+      aria-controls="desktop-menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
+      <span class="" aria-hidden="true"></span>
+    </a>
+
+    <button data-toggle="collapse" data-target="#content-index" aria-expanded="true" class="sidebar-btn p-3 sidebar-btn--desktop" type="button" aria-controls="content-index">
+      indice dei contenuti
+      <span class="it-collapse float-right"></span>
+      <span class="it-expand float-right"></span>
+    </button>
+    <div id="content-index" class="content-index--menu sidebar-list--wrapper sidebar-accordion-content collapse show">
+      <ul class="">
+        <li class="toctree-l1 ">
+          <a href='../index.html'>Sommario</a>
+        </li>
+      </ul>
+      
+      <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. I pilastri della semantica dei dati</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#attribuire-unidentita-alle-cose-del-mondo-uri-iri">1.1. Attribuire un’identità alle cose del mondo: URI(IRI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collegare-i-dati-con-luso-di-standard-aperti-e-condivisi">1.2. Collegare i dati con l’uso di standard aperti e condivisi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-rdf-resource-description-framework">1.2.1. Standard RDF – Resource Description Framework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alcuni-formati-noti-dello-standard-rdf">1.2.2. Alcuni formati noti dello standard RDF</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dare-un-significato-alle-cose-del-mondo">1.3. Dare un significato alle cose del mondo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vocabolario-controllato">1.3.1. Vocabolario controllato</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ontologia">1.3.2. Ontologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relazione-tra-ontologie-e-vocabolari-controllati">1.3.3. Relazione tra ontologie e vocabolari controllati</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dare-la-possibilita-di-interrogare-i-dati">1.4. Dare la possibilità di interrogare i dati</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lo-standard-sparql-sparql-protocol-and-rdf-query-language">1.4.1. Lo Standard SPARQL - SPARQL Protocol and RDF Query Language</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    <button data-toggle="collapse" data-target="#figures-index" aria-expanded="true" class="sidebar-btn p-3 sidebar-btn--desktop collapsed" type="button" aria-controls="figures-index">
+      indice delle figure
+      <span class="it-collapse float-right"></span>
+      <span class="it-expand float-right"></span>
+    </button>
+    <div id="figures-index" class="figures-index--menu sidebar-list--wrapper sidebar-accordion-content collapse">
+      <ul>
+<li><a class="reference internal" href="#id1">Fig. 1.1 - Esempio di grafo interconnesso di conoscenza</a></li>
+<li><a class="reference internal" href="#id2">Fig. 1.2 - Livelli di espressività semantica</a></li>
+</ul>
+
+    </div>
+    
+
+    
+
+    
+  </div>
+</section>
+          <!-- Toggle -->
+<div class="navbar-toggler--wrap navbar-toggler--wrap--bottom p-3">
+  <div class="navbar-toggler navbar-toggler--open p-0 border-0 ml-auto">
+    <div class="navbar-toggler-bottom__chapter align-middle text-truncate">
+      <span class="it-list mr-2"></span><span class="section-number">1. </span>I pilastri della semantica dei dati
+    </div>
+  </div>
+</div>
+
+<div class="sidebar-tabs">
+
+  <!-- Back button. -->
+  <div class="row">
+    <div class="col">
+      <button class="navbar-toggler navbar-toggler--back border-0 ml-auto" type="button" data-toggle="offcanvas">
+        <span class="it-arrow-left align-middle"></span>
+        <span class="navbar-toggler__chapter align-middle ml-2">
+          indici e glossario
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab -->
+  <ul class="row ml-3 mr-3 nav nav-tabs" role="tablist">
+    <li class="col text-center active">
+      <a id="content-index-mobile-tab" data-toggle="tab" href="#content-index-mobile" aria-controls="content-index-mobile" role="tab" aria-selected="true" class="sidebar-btn p-2 sidebar-btn--mobile active show">
+        contenuti
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="figures-index-mobile-tab" data-toggle="tab" href="#figures-index-mobile" aria-controls="figures-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        figure
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="table-index-mobile-tab" data-toggle="tab" href="#table-index-mobile" aria-controls="table-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        tabelle
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="glossary-index-mobile-tab" data-toggle="tab" href="#glossary-index-mobile" aria-controls="glossary-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        glossario
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Off canvas -->
+<section class="docs-offcanvas-menu" id="sidebar-nav">
+  <div class="tab-content sidebar-nav">
+
+      <div id="content-index-mobile" class="content-index--menu tab-pane sidebar-list--wrapper fade show active" role="tabpanel" aria-labelledby="content-index-mobile-tab">
+        <ul class="">
+          <li class="toctree-l1 ">
+            <a href='../index.html'>Sommario</a>
+          </li>
+        </ul>
+        
+        <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. I pilastri della semantica dei dati</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#attribuire-unidentita-alle-cose-del-mondo-uri-iri">1.1. Attribuire un’identità alle cose del mondo: URI(IRI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collegare-i-dati-con-luso-di-standard-aperti-e-condivisi">1.2. Collegare i dati con l’uso di standard aperti e condivisi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-rdf-resource-description-framework">1.2.1. Standard RDF – Resource Description Framework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alcuni-formati-noti-dello-standard-rdf">1.2.2. Alcuni formati noti dello standard RDF</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dare-un-significato-alle-cose-del-mondo">1.3. Dare un significato alle cose del mondo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vocabolario-controllato">1.3.1. Vocabolario controllato</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ontologia">1.3.2. Ontologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relazione-tra-ontologie-e-vocabolari-controllati">1.3.3. Relazione tra ontologie e vocabolari controllati</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dare-la-possibilita-di-interrogare-i-dati">1.4. Dare la possibilità di interrogare i dati</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lo-standard-sparql-sparql-protocol-and-rdf-query-language">1.4.1. Lo Standard SPARQL - SPARQL Protocol and RDF Query Language</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+
+      <div id="figures-index-mobile" class="figures-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="figures-index-mobile-tab">
+        <ul>
+<li><a class="reference internal" href="#id1">Fig. 1.1 - Esempio di grafo interconnesso di conoscenza</a></li>
+<li><a class="reference internal" href="#id2">Fig. 1.2 - Livelli di espressività semantica</a></li>
+</ul>
+
+      </div>
+
+      <div id="table-index-mobile" class="table-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="table-index-mobile-tab">
+        None
+      </div>
+
+      <div id="glossary-index-mobile" class="glossary-mobile--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="glossary-index-mobile-tab">
+        None
+      </div>
+
+  </div>
+</section>
+        </nav>
+        <div id="doc-content" class="col-content">
+          <!--<div class="doc-content__consultation">
+            <span class="it-icon-edit"></span>
+            in consultazione
+          </div>-->
+          
+            <div class="footer-buttons footer-buttons--prev" role="navigation" aria-label="footer navigation">
+                <a href="../index.html" class="" title="Introduzione alla semantica dei dati e del Web Semantico" accesskey="p" rel="prev"> Torna a Introduzione alla semantica dei dati e del Web Semantico</a>
+            </div>
+          
+          
+  <section id="i-pilastri-della-semantica-dei-dati">
+<h1><span class="section-number">1. </span>I pilastri della semantica dei dati<a class="headerlink" href="#i-pilastri-della-semantica-dei-dati" title="Permalink to this heading">¶</a></h1>
+<section id="attribuire-unidentita-alle-cose-del-mondo-uri-iri">
+<h2><span class="section-number">1.1. </span>Attribuire un’identità alle cose del mondo: URI(IRI)<a class="headerlink" href="#attribuire-unidentita-alle-cose-del-mondo-uri-iri" title="Permalink to this heading">¶</a></h2>
+<p>È sempre bene strutturare i dati privilegiando l’individuazione di
+entità e riducendo l’uso di descrizioni testuali (<em>things, not
+strings</em>). Le entità possono poi essere identificate univocamente
+attraverso l’uso di identificativi univoci e persistenti a cui riferirsi
+in maniera condivisa, risolvendo così il problema dell’identità anche
+nell’interscambio dei dati.</p>
+<p>Si definisce <em>Uniform Resource Identifier</em> (URI) una sequenza di caratteri
+che identifica univocamente e in maniera persistente nel tempo una
+risorsa (nel web). Si usa il termine IRI - <em>International Resource
+Identifier</em> quando si parla di un identificativo che consente l’utilizzo
+di caratteri adatti a lingue diverse dall’inglese.</p>
+<p>Un esempio di URI è il seguente:
+<a class="reference external" href="https://w3id.org/italia/lombardia/data/construction/1A060-00365">https://w3id.org/italia/lombardia/data/construction/1A060-00365</a>.</p>
+<p>Esso segue le <a class="reference external" href="https://www.agid.gov.it/sites/default/files/repository_files/lg-open-data_v.1.0_1.pdf">linee guida open data per la definizione di URI univoci e
+persistenti nel
+tempo</a>
+a cui si rimanda.</p>
+<p>Nella gestione degli URI, come riportato nelle suddette linee guida, si
+ricorda in questo contesto che è necessario abilitare:</p>
+<ul class="simple">
+<li><p><strong>meccanismi di content negotiation</strong> nella richiesta di una
+risorsa: questi consentono di rendere disponibile, allo stesso URI,
+diverse rappresentazioni di una risorsa in caso di molteplici
+rappresentazioni/formati della stessa;</p></li>
+<li><p><strong>meccanismi di dereferenziazione degli URI</strong>: se utilizzati con un
+browser, gli URI devono restituire una rappresentazione web (ad
+esempio una pagina web informativa) della risorsa che identificano.</p></li>
+</ul>
+</section>
+<section id="collegare-i-dati-con-luso-di-standard-aperti-e-condivisi">
+<h2><span class="section-number">1.2. </span>Collegare i dati con l’uso di standard aperti e condivisi<a class="headerlink" href="#collegare-i-dati-con-luso-di-standard-aperti-e-condivisi" title="Permalink to this heading">¶</a></h2>
+<p>L’uso di standard aperti e condivisi, che offrono nativamente la
+possibilità di collegare dati, agevola l’interoperabilità e
+l’integrazione dei dati.</p>
+<p>Nel contesto del Web Semantico, gli standard riportati nel seguito sono
+quelli di riferimento per raggiungere questi obiettivi.</p>
+<section id="standard-rdf-resource-description-framework">
+<h3><span class="section-number">1.2.1. </span>Standard RDF – Resource Description Framework<a class="headerlink" href="#standard-rdf-resource-description-framework" title="Permalink to this heading">¶</a></h3>
+<p>Le risorse web semantiche sono descritte in termini di entità, che hanno
+un tipo, e di relazioni tra entità che hanno un significato.</p>
+<p>La forma di rappresentazione è quella della tripla
+soggetto-predicato-oggetto, dove il soggetto è un nodo che ha sempre un
+URI/IRI, il predicato è un arco che ha sempre un URI/IRI, l’oggetto può
+essere una semplice stringa, un numero, una data, un booleano, oppure un
+nodo con un URI/IRI così da diventare potenzialmente il soggetto di
+un’altra tripla. Quest’ultimo meccanismo consente di concatenare triple,
+creando così i presupposti per collegare i dati a formare un grafo
+interconnesso di conoscenza (seguente figura).</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/image1.png"><img alt="Esempio di grafo interconnesso di conoscenza" src="../_images/image1.png" style="width: 6.10417in; height: 2.27083in;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Esempio di grafo interconnesso di conoscenza</span><a class="headerlink" href="#id1" title="Link a questa immagine">¶</a></p>
+</figcaption>
+</figure>
+<p>Lo standard <code class="docutils literal notranslate"><span class="pre">RDF</span></code>, pertanto, offre un modello di rappresentazione di dati
+semanticamente arricchiti e collegati nel Web e può essere serializzato
+(o reso disponibile) attraverso diversi formati.</p>
+</section>
+<section id="alcuni-formati-noti-dello-standard-rdf">
+<h3><span class="section-number">1.2.2. </span>Alcuni formati noti dello standard RDF<a class="headerlink" href="#alcuni-formati-noti-dello-standard-rdf" title="Permalink to this heading">¶</a></h3>
+<p><strong>RDF/XML</strong></p>
+<p><a class="reference external" href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a> è una sintassi
+<code class="docutils literal notranslate"><span class="pre">XML</span></code> usata per rappresentare dati espressi secondo il modello <code class="docutils literal notranslate"><span class="pre">RDF</span></code>. I file
+<code class="docutils literal notranslate"><span class="pre">RDF/XML</span></code> hanno estensione <code class="docutils literal notranslate"><span class="pre">.rdf</span></code>.</p>
+<p>Un esempio di serializzazione <code class="docutils literal notranslate"><span class="pre">RDF/XML</span></code>, per rappresentare
+un’organizzazione pubblica dal nome <strong>Consiglio Nazionale delle Ricerche
+– CNR</strong> e con il suo codice IPA associato, è quello di seguito:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+
+&lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
+
+         xmlns:cov=&quot;https://w3id.org/italia/onto/COV/&quot;&gt;
+
+  &lt;rdf:Description rdf:about=&quot;https://w3id.org/italia/data/organisation/cnr&quot;&gt;
+
+    &lt;rdf:type rdf:resource=&quot;https://w3id.org/italia/onto/COV/PublicOrganization&quot;/&gt;
+
+    &lt;cov:legalName xml:lang=&quot;it&quot;&gt;Consiglio Nazionale delle Ricerche - CNR&lt;/cov:legalName&gt;
+
+    &lt;cov:IPACode&gt;cnr&lt;/cov:IPACode&gt;
+
+  &lt;/rdf:Description&gt;
+
+&lt;/rdf:RDF&gt;
+</pre></div>
+</div>
+<p><strong>RDF/Turtle</strong></p>
+<p><a class="reference external" href="https://www.w3.org/TR/turtle/">RDF/Turtle</a> è una sintassi che
+consente di rappresentare un grafo RDF in una forma di testo compatta,
+ad oggetti (tutte le triple associate a un soggetto), più leggibile
+anche dalle persone.</p>
+<p>I file <code class="docutils literal notranslate"><span class="pre">RDF/Turtle</span></code> hanno estensione <code class="docutils literal notranslate"><span class="pre">.ttl</span></code>.</p>
+<p>Lo stesso esempio utilizzato per la serializzazione <code class="docutils literal notranslate"><span class="pre">RDF/XML</span></code> è
+rappresentato nel formato <code class="docutils literal notranslate"><span class="pre">RDF/Turtle</span></code> di seguito.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@prefix</span> <span class="n">cov</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">onto</span><span class="o">/</span><span class="n">COV</span><span class="o">/&gt;</span> <span class="o">.</span>
+
+<span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">organisation</span><span class="o">/</span><span class="n">cnr</span><span class="o">&gt;</span> <span class="n">a</span> <span class="n">cov</span><span class="p">:</span><span class="n">PublicOrganization</span> <span class="p">;</span>
+
+  <span class="n">cov</span><span class="p">:</span><span class="n">legalName</span> <span class="s2">&quot;Consiglio Nazionale delle Ricerche - CNR&quot;</span><span class="nd">@it</span> <span class="p">;</span>
+
+  <span class="n">cov</span><span class="p">:</span><span class="n">IPACode</span> <span class="s2">&quot;cnr&quot;</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>JSON-LD</strong></p>
+<p><a class="reference external" href="https://www.w3.org/TR/json-ld11/">JSON-LD</a> è una sintassi <code class="docutils literal notranslate"><span class="pre">JSON</span></code> usata
+per rappresentare dati espressi secondo il modello <code class="docutils literal notranslate"><span class="pre">RDF</span></code>. La sintassi è
+definita per potersi integrare agevolmente nei sistemi che già
+utilizzano <code class="docutils literal notranslate"><span class="pre">JSON</span></code> e fornisce un percorso di transizione da <code class="docutils literal notranslate"><span class="pre">JSON</span></code> a <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code>.
+Nasce principalmente come un modo per utilizzare dati interconnessi in
+grafi della conoscenza in ambienti di programmazione basati sul Web, per
+costruire servizi Web interoperabili e per memorizzare i dati in motori
+di archiviazione basati su <code class="docutils literal notranslate"><span class="pre">JSON</span></code>.</p>
+<p>I file <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code> hanno estensione <code class="docutils literal notranslate"><span class="pre">.jsonld</span></code>.</p>
+<p>Lo stesso esempio utilizzato per le serializzazioni <code class="docutils literal notranslate"><span class="pre">RDF/XML</span></code> e <code class="docutils literal notranslate"><span class="pre">RDF/Turtle</span></code>
+è illustrato di seguito nel formato <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+
+  <span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
+
+    <span class="s2">&quot;rdf&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</span><span class="p">,</span>
+
+    <span class="s2">&quot;cov&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/italia/onto/COV/&quot;</span>
+
+  <span class="p">},</span>
+
+  <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://w3id.org/italia/data/organisation/cnr&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;cov:PublicOrganization&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;cov:IPACode&quot;</span><span class="p">:</span> <span class="s2">&quot;cnr&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;cov:legalName&quot;</span><span class="p">:</span> <span class="p">{</span>
+
+    <span class="s2">&quot;@language&quot;</span><span class="p">:</span> <span class="s2">&quot;it&quot;</span><span class="p">,</span>
+
+    <span class="s2">&quot;@value&quot;</span><span class="p">:</span> <span class="s2">&quot;Consiglio Nazionale delle Ricerche - CNR&quot;</span>
+
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="dare-un-significato-alle-cose-del-mondo">
+<h2><span class="section-number">1.3. </span>Dare un significato alle cose del mondo<a class="headerlink" href="#dare-un-significato-alle-cose-del-mondo" title="Permalink to this heading">¶</a></h2>
+<p>Per garantire che il significato dei dati sia preservato durante
+l’interscambio è necessario esplicitare il loro significato. Questo
+comporta definire, in modo più o meno articolato, tipi e relazioni tra
+tipi.</p>
+<p>Per definire il significato dei dati si usano strumenti quali i
+vocabolari controllati e/o le ontologie, descritti di seguito.</p>
+<section id="vocabolario-controllato">
+<span id="vocabolario-controllato-1"></span><h3><span class="section-number">1.3.1. </span>Vocabolario controllato<a class="headerlink" href="#vocabolario-controllato" title="Permalink to this heading">¶</a></h3>
+<p>Con il termine <strong>vocabolario controllato</strong> si intende un elenco
+standardizzato di concetti denotati da termini di riferimento e da
+codici. L’elenco è utile per organizzare, descrivere, predefinire e
+indicizzare conoscenza di un dominio (e.g., il vocabolario controllato
+sulla tipologia di beni culturali italiani).</p>
+<p>Esistono alcune tipologie di elenchi di concetti che rientrano sotto il
+termine generale di “vocabolari controllati”:</p>
+<ul class="simple">
+<li><p><strong>Lista di termini (Code List)</strong>: Una lista di concetti identificati
+da un codice e denotati da un termine;</p></li>
+<li><p><strong>Tassonomia (Taxonomy)</strong>: L’elenco di concetti, con i relativi
+termini principali e codici, è organizzato in una struttura
+gerarchia, dove le categorie più ampie possono ricomprendere
+sottocategorie più ristrette (e.g., Animale – Cane, Gatto);</p></li>
+<li><p><strong>Tesauro (Tesauri)</strong>: L’elenco di concetti è organizzato in maniera
+più articolata delle due tipologie precedenti. In un tesauro i
+concetti possono essere in relazione tra loro, non solo in forma
+gerarchica ma anche in forma di correlazione o per indicare che un
+termine di un concetto è sinonimo di un altro termine. In generale,
+un tesauro dovrebbe includere anche le definizioni associate a
+ciascun concetto.</p></li>
+</ul>
+<p>Buona e diffusa pratica è quella di utilizzare un’ontologia per definire
+vocabolari controllati di tutti i tipi. Questa ontologia è uno standard
+del Web e si chiama <a class="reference external" href="https://www.w3.org/TR/skos-reference/">SKOS - Simple Knowledge Organization
+System</a>.</p>
+<p>Di seguito è riportato un estratto di uso di <em>SKOS</em> per definire la lista
+di termini del sesso di una persona, rappresentati nel formato
+<code class="docutils literal notranslate"><span class="pre">RDF/Turtle</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">controlled</span><span class="o">-</span><span class="n">vocabulary</span><span class="o">/</span><span class="n">classifications</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">people</span><span class="o">/</span><span class="n">sex</span><span class="o">/</span><span class="n">F</span><span class="o">&gt;</span>
+
+ <span class="n">a</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
+
+ <span class="n">skos</span><span class="p">:</span><span class="n">inScheme</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">controlled</span><span class="o">-</span><span class="n">vocabulary</span><span class="o">/</span><span class="n">classifications</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">people</span><span class="o">/</span><span class="n">sex</span><span class="o">&gt;</span> <span class="p">;</span>
+
+ <span class="n">skos</span><span class="p">:</span><span class="n">notation</span> <span class="s2">&quot;F&quot;</span> <span class="p">;</span>
+
+ <span class="n">skos</span><span class="p">:</span><span class="n">prefLabel</span> <span class="s2">&quot;Femmina&quot;</span><span class="nd">@it</span> <span class="p">,</span> <span class="s2">&quot;Female&quot;</span><span class="nd">@en</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>Nell’esempio, il concetto di femmina ha un URI associato ed è definito
+come un concetto secondo <em>SKOS</em> (<code class="docutils literal notranslate"><span class="pre">Concept</span></code>) che si trova in un vocabolario
+più ampio sul sesso (la proprietà <em>SKOS</em> <code class="docutils literal notranslate"><span class="pre">inScheme</span></code>), che ha un codice <code class="docutils literal notranslate"><span class="pre">F</span></code>
+(la proprietà <em>SKOS</em> <code class="docutils literal notranslate"><span class="pre">notation</span></code>) e che ha un termine principale o preferito
+(la proprietà <em>SKOS</em> <code class="docutils literal notranslate"><span class="pre">prefLabel</span></code>) espresso nelle due lingue dell’italiano e
+dell’inglese.</p>
+</section>
+<section id="ontologia">
+<span id="ontologia-1"></span><h3><span class="section-number">1.3.2. </span>Ontologia<a class="headerlink" href="#ontologia" title="Permalink to this heading">¶</a></h3>
+<p>In ambito informatico, con il termine <strong>ontologia</strong> si intende una
+specifica formale, condivisa ed esplicita di una rappresentazione
+(concettualizzazione) di un dominio di conoscenza, definita sulla base
+di requisiti specifici. La rappresentazione consiste nella definizione
+di entità (o classi), di attributi di entità e di relazioni tra entità.</p>
+<p>Un’ontologia offre una semantica molto più forte di quella offerta da
+semplici vocabolari controllati o da semplici dizionari: attraverso la
+definizione dei suoi assiomi logici, ossia affermazioni che, andando
+oltre la semplice enunciazione di principi universalmente veri,
+permettono di esprimere relazioni e vincoli specifici tra entità
+(classi) all’interno dell’ontologia (e.g., assiomi di equivalenza, di
+disgiunzione tra membri di classi, ecc.), è possibile abilitare un
+ragionamento automatico, verificare la coerenza nelle definizioni,
+inferire nuova conoscenza.</p>
+<p>In generale, le ontologie svolgono un ruolo cruciale nella
+strutturazione e gestione della conoscenza, rendendo le informazioni più
+accessibili, interpretabili e utilizzabili sia dagli esseri umani che da
+macchine.</p>
+<p>Esistono degli standard del Web che consentono di creare ontologie. Gli
+standard sono:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3.org/TR/rdf-schema/">RDFS – RDF Schema</a>: è un
+vocabolario leggero che estende il modello <code class="docutils literal notranslate"><span class="pre">RDF</span></code> per descrivere
+semanticamente dati <code class="docutils literal notranslate"><span class="pre">RDF</span></code>. Esso fornisce elementi basilari per creare
+ontologie (e.g., definisce se una classe è sottoclasse di un’altra,
+il dominio e codominio delle proprietà tra classi, ecc.)</p></li>
+<li><p><a class="reference external" href="https://www.w3.org/TR/owl-features/">OWL – Web Ontology
+Language:</a> è un linguaggio
+per la rappresentazione della conoscenza che si basa su <code class="docutils literal notranslate"><span class="pre">RDF</span></code> e <code class="docutils literal notranslate"><span class="pre">RDFS</span></code> ma
+che offre capacità più espressive per definire la semantica dei dati
+(e.g., vincoli di cardinalità per specificare il numero di istanze
+che una proprietà può avere, operatori logici per definire relazioni
+complesse, ecc.).</p></li>
+</ul>
+<p>Di seguito si riporta un estratto, a titolo d’esempio, dell’ontologia
+<em>OWL</em> sulle persone, espressa nel formato <code class="docutils literal notranslate"><span class="pre">RDF/Turtle</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### Proprietà haSesso</span>
+
+<span class="p">:</span><span class="n">hasSex</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">owl</span><span class="p">:</span><span class="n">ObjectProperty</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">domain</span> <span class="p">:</span><span class="n">Person</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="nb">range</span> <span class="p">:</span><span class="n">Sex</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">comment</span> <span class="s2">&quot;La relazione che lega una persona al suo sesso&quot;</span><span class="nd">@it</span> <span class="p">,</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">isDefinedBy</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">onto</span><span class="o">/</span><span class="n">CPV</span><span class="o">&gt;</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;ha sesso&quot;</span><span class="nd">@it</span> <span class="p">,</span>
+
+                   <span class="s2">&quot;has sex&quot;</span><span class="nd">@en</span> <span class="o">.</span>
+
+<span class="c1">### Classe Persona Fisica</span>
+
+<span class="p">:</span><span class="n">Person</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">owl</span><span class="p">:</span><span class="n">Class</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">subClassOf</span>
+
+               <span class="p">[</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">owl</span><span class="p">:</span><span class="n">Restriction</span> <span class="p">;</span>
+
+                <span class="n">owl</span><span class="p">:</span><span class="n">onProperty</span> <span class="p">:</span><span class="n">hasSex</span> <span class="p">;</span>
+
+                <span class="n">owl</span><span class="p">:</span><span class="n">qualifiedCardinality</span> <span class="s2">&quot;1&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">nonNegativeInteger</span> <span class="p">;</span>
+
+                <span class="n">owl</span><span class="p">:</span><span class="n">onClass</span> <span class="p">:</span><span class="n">Sex</span>
+
+              <span class="p">];</span>
+
+       <span class="n">rdfs</span><span class="p">:</span><span class="n">comment</span> <span class="s2">&quot;Un singolo essere umano che può essere vivo o morto. Secondo la definizione giuridica è ogni essere umano che assume, dal momento della nascita, lo stato di soggetto di diritto e come tale una capacità giuridica, ovvero la titolarità di diritti e doveri e l&#39;assunzione di una posizione nelle situazioni giuridiche soggettive.&quot;</span><span class="nd">@it</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">isDefinedBy</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w3id</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">italia</span><span class="o">/</span><span class="n">onto</span><span class="o">/</span><span class="n">CPV</span><span class="o">&gt;</span> <span class="p">;</span>
+
+        <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Person&quot;</span><span class="nd">@en</span> <span class="p">,</span>
+
+                   <span class="s2">&quot;Persona fisica&quot;</span><span class="nd">@it</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>Nell’esempio esiste una proprietà tra classi haSex che collega la classe
+<code class="docutils literal notranslate"><span class="pre">Person</span></code> (<code class="docutils literal notranslate"><span class="pre">rdfs:domain</span></code>) alla classe <code class="docutils literal notranslate"><span class="pre">Sex</span></code> (<code class="docutils literal notranslate"><span class="pre">rdfs:range</span></code>) ed esiste la
+definizione della classe <code class="docutils literal notranslate"><span class="pre">Person</span></code> (<code class="docutils literal notranslate"><span class="pre">owl:Class</span></code>). Per la classe <code class="docutils literal notranslate"><span class="pre">Person</span></code>,
+l’esempio fornisce anche la definizione in <em>OWL</em> di vincoli di
+cardinalità. In particolare, si sta definendo che tutte le persone
+formano un sottoinsieme di tutte le cose che hanno un sesso.</p>
+</section>
+<section id="relazione-tra-ontologie-e-vocabolari-controllati">
+<h3><span class="section-number">1.3.3. </span>Relazione tra ontologie e vocabolari controllati<a class="headerlink" href="#relazione-tra-ontologie-e-vocabolari-controllati" title="Permalink to this heading">¶</a></h3>
+<p>Da quanto sopra riportato è evidente che, sebbene le ontologie e i
+vocabolari controllati consentano di dare un significato ai dati e
+possano essere entrambi definiti per rappresentare la conoscenza di un
+certo dominio di interesse, il livello di profondità semantica offerta
+dai due strumenti è diverso.</p>
+<p>La figura che segue mostra il grado di profondità semantico offerto dai
+vocabolari controllati, di diverso tipo, rispetto alle ontologie.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/image2.png"><img alt="Livelli di espressività semantica" src="../_images/image2.png" style="width: 3.42708in; height: 2.70833in;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Livelli di espressività semantica</span><a class="headerlink" href="#id2" title="Link a questa immagine">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="dare-la-possibilita-di-interrogare-i-dati">
+<h2><span class="section-number">1.4. </span>Dare la possibilità di interrogare i dati<a class="headerlink" href="#dare-la-possibilita-di-interrogare-i-dati" title="Permalink to this heading">¶</a></h2>
+<p>Nell’ambito della semantica, è necessario fornire strumenti che
+consentano di interrogare i dati, sia in un’interazione di tipo
+persona-macchina che in una di tipo macchina-macchina.</p>
+<section id="lo-standard-sparql-sparql-protocol-and-rdf-query-language">
+<h3><span class="section-number">1.4.1. </span>Lo Standard SPARQL - SPARQL Protocol and RDF Query Language<a class="headerlink" href="#lo-standard-sparql-sparql-protocol-and-rdf-query-language" title="Permalink to this heading">¶</a></h3>
+<p>Nel contesto di dati semanticamente arricchiti ed espressi nella forma
+di triple, esiste uno standard orientato ai dati che permette di
+navigarli e interrogarli, anche se provenienti da sorgenti diverse e
+distribuite sulla rete (interrogazioni federate). Lo standard è
+<a class="reference external" href="https://www.w3.org/TR/sparql11-query/">SPARQL</a> ed è sia un
+linguaggio per l’interrogazione di grafi <code class="docutils literal notranslate"><span class="pre">RDF</span></code> simile a <code class="docutils literal notranslate"><span class="pre">SQL</span></code>, sia un
+protocollo. Quest’ultimo aspetto rende <code class="docutils literal notranslate"><span class="pre">SPARQL</span></code> uno standard attraverso
+cui è possibile trasmettere interrogazioni e aggiornamenti <code class="docutils literal notranslate"><span class="pre">SPARQL</span></code> a un
+servizio di elaborazione <code class="docutils literal notranslate"><span class="pre">SPARQL</span></code> che restituisce i risultati via HTTP
+all’applicazione cliente che li ha richiesti, abilitando così
+un’interazione macchina-macchina su protocollo HTTP.</p>
+<p>Un esempio di interrogazione <code class="docutils literal notranslate"><span class="pre">SPARQL</span></code> è quello di seguito: essa consente
+di ottenere tutti gli URI dei concetti, le etichette principali in tutte
+le lingue, se esistenti, e i codici del vocabolario controllato sul
+sesso.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+select ?concetto ?etichetta ?codice
+
+where {
+
+   ?concetto a skos:Concept ;
+
+   skos:inScheme &lt;https://w3id.org/italia/controlled-vocabulary/classifications-for-people/sex&gt; ;
+
+   skos:prefLabel ?etichetta ;
+
+   skos:notation ?codice .
+
+}
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+          
+          </div>
+
+        </div>
+      </div>
+  </div>
+  <footer class="footer container-fluid container-fluid--desktop">
+  <div class="px-3 pt-md-3 pb-md-5 mx-md-5 mb-4 mb-md-0">
+    <div class="row align-items-center d-flex">
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-4 pt-sm-5">
+        <a href="http://teamdigitale.governo.it/" target="_blank" class="d-inline-block" rel="noopener">
+          <div class="d-flex align-items-center">
+            <div class="px-2">
+              <img class="team-logo--icon" src="../_static/images/team-digitale-logo.svg" alt="Team per la Trasformazione Digitale">
+            </div>
+            <div class="px-2 border-white border-left team-logo--text text-white">
+              Team per la Trasformazione Digitale
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <span class="d-block m-2 in-collaboration">in collaborazione con</span>
+        <a href="https://www.agid.gov.it/" target="_blank" class="d-inline-block" rel="noopener">
+          <div class="d-flex align-items-center">
+            <div class="px-2">
+              <img class="agid-logo--icon" src="../_static/images/agid-logo.svg" alt="Agenzia per l'Italia Digitale">
+            </div>
+            <span class="agid-logo--separator border-white border-left"></span>
+            <div class="px-2 agid-logo--text text-white">
+              Agenzia per l'Italia Digitale
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-lg-4 pt-4 pt-sm-5">
+        <div class="text-center text-lg-right social d-flex align-items-center justify-content-center justify-content-lg-end flex-column flex-lg-row">
+          <div class="mr-lg-1 mb-2 mb-lg-0">Seguici su</div>
+          <div>
+            <a href="https://github.com/italia/" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-github"></i></a>
+            <a href="https://twitter.com/teamdigitaleIT" class="d-inline-flex small-prints mx-1 social__link"><i class="d-inline-block it-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/teamdigitale/" class="d-finline-lex small-prints mx-1 social__link"><i class="d-inline-block it-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/row-->
+    
+    <!--
+    <div class="row pb-4 colophon mt-md-5 mt-sm-3 pt-3 pt-sm-2">
+      <ul class="col list-inline small">
+        
+        <li class="list-inline-item">
+          <strong><a class="footer-menu__link text-light-blue small-prints" href="/privacy-policy/">Privacy policy</a></strong>
+        </li>
+        
+        <li class="list-inline-item">
+          <strong><a class="footer-menu__link text-light-blue small-prints" href="/cookies-policy/">Cookie policy</a></strong>
+        </li>
+        
+        <li class="list-inline-item">
+          <strong><a class="footer-menu__link text-light-blue small-prints" href="/note-legali/">Note legali</a></strong>
+        </li>
+        
+      </ul>
+    </div>
+    -->
+    
+  </div>
+</footer>
+  <script type="text/javascript">
+var t = {
+  this : "it",
+  locale : "it_IT",
+  about_these_documents : "Informazioni su questi documenti",
+  active_lang : "lingua attiva",
+  cookiebar_accept : "Accetto",
+  cookiebar_msg : "Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.",
+  cookiebar_privacy_policy : "Cookie policy",
+  copyright : "Copyright",
+  documents : "Documentazione",
+  download : "Scarica",
+  footer_link_privacy_policy : "Privacy policy",
+  footer_link_cookies : "Cookie policy",
+  footer_link_legal_notes : "Note legali",
+  go_to : "Vai a",
+  index : "Indice",
+  last_updated : "Più recenti",
+  most_viewed_this_month : "Più visti questo mese",
+  navigation_menu_label : "Menu di navigazione",
+  navigation_menu_esc : "esci dalla navigazione",
+  search : "Cerca",
+  search_form_label : "Cerca nel documento",
+  search_form_off : "disattiva il form di ricerca",
+  search_form_on : "attiva il form di ricerca",
+  search_form_start : "avvia la ricerca",
+  search_results : "Risultati della ricerca",
+  search_no_results : "La tua ricerca non ha prodotto documenti. Assicurati di non aver commesso errori di digitazione.",
+  site_subtitle : "Documenti pubblici, digitali.",
+  site_title : "Docs Italia",
+  share_msg : "condividi",
+  skiplink_goto_content : "vai ai contenuti",
+  skiplink_goto_navigation : "vai alla navigazione del sito",
+  toggle_menu_label : "accedi al menu",
+  version : "versione",
+  compare : "Confronta",
+  copy_link : "copia link",
+  copied_link : "link copiato",
+  see_actions : "vedi azioni",
+  other_actions : "altre azioni",
+  comments : "commenti",
+  back_to_text : "torna al testo",
+  glossary_empty : "informazione non trovata",
+  glossary : "glossario",
+  go_to_glossary : "vai al glossario",
+  deepening : "approfondimento",
+  example : "esempio",
+  must : "si deve",
+  must_not : "non si deve",
+  should : "si dovrebbe",
+  should_not : "non si dovrebbe",
+  may : "si può",
+  use : "usa",
+  use_not : "non usare",
+  consultation : "consultazione",
+  show_more : "mostra tutto",
+  show_less : "mostra meno",
+  content_index : "indice dei contenuti",
+  table_index : "indice delle tabelle",
+  figures_index : "indice delle figure",
+  figures : "figure",
+  tables : "tabelle",
+  contents : "contenuti",
+  in_consultation : "in consultazione",
+  indices_and_glossary : "indici e glossario",
+  note : "nota",
+  no_description : "nessuna descrizione",
+  no_content : "nessuna sezione",
+  no_glossary : "nessun glossario",
+  no_figures : "nessuna figura",
+  no_tables : "nessuna tabella",
+  summary : "sommario",
+  project : "Progetto",
+  administration : "Amministrazione",
+  info : "Informazioni",
+  related : "Documenti correlati",
+  actions : "Azioni",
+  tags : "Tag",
+  view_source : "Sorgente",
+  previous : "precedente",
+  next : "successivo",
+  in_collaboration_with : "in collaborazione con",
+  follow_us : "seguici su",
+  header_link_trasformazione : "Piano Triennale",
+  header_link_piattaforme : "Piattaforme",
+  header_link_software : "Software",
+  header_link_api : "API",
+  header_link_community : "Le community",
+  header_link_developers : "Developers",
+  header_link_design : "Designers",
+  header_link_tools : "Gli strumenti",
+  header_link_forum : "Forum",
+  header_link_docs : "Docs",
+  header_link_github : "GitHub",
+  header_link_secondary_who_we_are : "Chi siamo",
+  header_link_projects : "Progetti",
+  header_link_documents : "Documenti",
+  header_link_administrations : "Amministrazioni",
+  header_link_whatis : "Che cos'è",
+}
+</script>
+  <a href="#" aria-hidden="true" data-attribute="return-to-top" class="return-to-top">
+  <i class="it-collapse"></i>
+</a>
+  
+  <script type="text/javascript">
+var PRODUCTION_DOMAIN = '';
+var DOCSITALIA_DATA = {
+  publisher_slug: '',
+  publisher_project_slug: ''
+}
+
+var DOCUMENTATION_OPTIONS = {
+    URL_ROOT: '../',
+    VERSION: '',
+    LANGUAGE: 'it',
+    COLLAPSE_INDEX: false,
+    FILE_SUFFIX: '.html',
+    HAS_SOURCE: true,
+    SOURCELINK_SUFFIX: '.txt'
+};
+</script>
+<script src="../_static/js/theme.js"></script>
+<script type="text/javascript" src="../_static/documentation_options.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+<script type="text/javascript" src="../_static/translations.js"></script>
+<script type="text/javascript" src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script type="text/javascript" src="../None"></script>
+  
+  <script type="text/javascript">
+  <!-- Matomo -->
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'm6pMPgL3nV']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  <!-- End Matomo -->
+</script>
+  
+</body>
+</html>
