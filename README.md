@@ -1,8 +1,9 @@
 # Introduzione alla semantica dei dati e del Web Semantico
 
-Questo repository contiene un'introduzione alla semantica dei dati e 
-del Web Semantico in formato sorgente.
+La presente guida è uno strumento dedicato a chi è nuovo nel mondo della semantica dei dati e ha bisogno di un introduzione generale sul tema del Web Semantico.
+Il documento nasce per supportare gli utenti del Catalogo nazionale per la semantica dei dati [schema.gov.it](https://schema.gov.it/).
 
+Il repository contiene il documento in formato sorgente.
 
 Il repository è strutturato per essere compatibile con la piattaforma [Docs
 Italia](https://italia.github.io/pdnd-guida-nomenclatura-eservice/).
