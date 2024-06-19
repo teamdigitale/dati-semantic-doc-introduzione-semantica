@@ -3,9 +3,7 @@
 La presente guida è uno strumento dedicato a chi è nuovo nel mondo della semantica dei dati e ha bisogno di un introduzione generale sul tema del Web Semantico.
 Il documento nasce per supportare i potenziali utenti del Catalogo nazionale per la semantica dei dati [schema.gov.it](https://schema.gov.it/).
 
-Il repository contiene il documento in formato sorgente.
-
-Il repository è strutturato per essere compatibile con la piattaforma [Docs
+Il repository contiene il documento in formato sorgente ed è strutturato per essere compatibile con la piattaforma [Docs
 Italia](https://italia.github.io/pdnd-guida-nomenclatura-eservice/).
 
 # Preview
