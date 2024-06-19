@@ -108,7 +108,7 @@ def add_context_data(app, pagename, templatename, context, doctree):
         ('Catalogo', '#'),
         ('Guida', '#')
     ]
-    context['docstitle'] = 'Introduzione alla semantica dei dati'
+    context['docstitle'] = 'Introduzione alla semantica dei dati e del Web Semantico'
 
 def generate_additonal_tocs(app, pagename, templatename, context, doctree):
     """Generate and add additional tocs to Sphinx context"""

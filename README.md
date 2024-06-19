@@ -1,7 +1,7 @@
-# Introduzione alla semantica dei dati
+# Introduzione alla semantica dei dati e del Web Semantico
 
-Questo repository contiene un'introduzione alla semantica dei dati
-in formato sorgente.
+Questo repository contiene un'introduzione alla semantica dei dati e 
+del Web Semantico in formato sorgente.
 
 
 Il repository è strutturato per essere compatibile con la piattaforma [Docs

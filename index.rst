@@ -1,5 +1,5 @@
-Introduzione alla semantica dei dati
-++++++++++++++++++++++++++++++++++++++++++++
+Introduzione alla semantica dei dati e del Web Semantico
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Nell’ambito di un linguaggio, sia esso naturale che informatico, si
 individuano due elementi essenziali: la sintassi e la semantica. Mentre
@@ -48,12 +48,13 @@ Per realizzare quanto sopra, ci sono quattro regole di base da seguire:
 -  È necessario includere collegamenti ad altri dati esistenti nel Web
    dei dati per creare valore dall’integrazione dei dati.
 
+L'Introduzione alla semantica dei dati e del Web Semantico è stata redatta grazie alla collaborazione
+tra il **Dipartimento di trasformazione digitale** e la **Prof.ssa Giorgia Lodi del ISTC-CNR**.
+
+**Indice dei contenuti:**
+
 .. toctree::
   :maxdepth: 3
   :numbered:
 
-  docs/i-pilastri-della-semantica-dei-dati.rst
-
-L'introduzione alla semantica dei dati è stata redatta grazie alla collaborazione
-tra il **Dipartimento di trasformazione digitale** e la **Prof.ssa Giorgia Lodi del ISTC-CNR**.
-  
+  docs/introduzione-alla-semantica-dei-dati.rst
