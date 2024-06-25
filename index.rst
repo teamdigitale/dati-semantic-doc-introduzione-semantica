@@ -48,8 +48,6 @@ Per realizzare quanto sopra, ci sono quattro regole di base da seguire:
 -  È necessario includere collegamenti ad altri dati esistenti nel Web
    dei dati per creare valore dall’integrazione dei dati.
 
-L'Introduzione alla semantica dei dati e del Web Semantico è stata redatta grazie alla collaborazione
-tra il **Dipartimento di trasformazione digitale** e la **Prof.ssa Giorgia Lodi del ISTC-CNR**.
 
 **Indice dei contenuti:**
 
@@ -58,3 +56,8 @@ tra il **Dipartimento di trasformazione digitale** e la **Prof.ssa Giorgia Lodi 
   :numbered:
 
   docs/introduzione-alla-semantica-dei-dati.rst
+
+.. toctree::
+  :name: content_toc
+
+  docs/credits.rst
